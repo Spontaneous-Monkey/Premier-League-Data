@@ -1,0 +1,62 @@
+#currentLink {
+    color: #00bfa5;
+}
+.row, .divider{
+    padding-left: 100;
+}
+.section {
+    padding-left: 40px;
+}
+
+#slideTitle {
+    font-size: 23;
+    font-weight: normal;
+}
+.side-nav {
+    width: 225px;
+}
+
+#paraCoor {
+    min-height: 550;
+    min-width: 1050;
+}
+/* parcoords styles */
+.parcoords > svg, .parcoords > canvas { 
+  font: 11px "Source Code Pro", Consolas, monaco, monospace;
+  position: absolute;
+}
+.parcoords > canvas {
+  pointer-events: none;
+}
+
+.parcoords text.label {
+  cursor: default;
+}
+
+.parcoords rect.background {
+  fill: transparent;
+}
+.parcoords rect.background:hover {
+  fill: rgba(120,120,120,0.2);
+}
+.parcoords .resize rect {
+  fill: rgba(0,0,0,0.1);
+}
+.parcoords rect.extent {
+  fill: rgba(255,255,255,0.25);
+  stroke: rgba(0,0,0,0.6);
+}
+.parcoords .axis line, .parcoords .axis path {
+  fill: none;
+  stroke: #454545;
+  shape-rendering: crispEdges;
+}
+.parcoords canvas {
+  opacity: 1;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+.parcoords canvas.faded {
+  opacity: 0.25;
+}

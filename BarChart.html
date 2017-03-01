@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Bar Chart</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/BarChart.css">
+        <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <ul id="slide-out" class="side-nav fixed">
+                <li><a id="slideTitle" class="header teal accent-4 white-text">Data Views</a></li>
+                <li><a href="#!" id="currentLink">Bar Chart</a></li>
+                <li><a href="BiScatter.html">Bivariate Scatter Plot</a></li>
+                <li><a href="CorrMatrix.html">Correlation Matrix</a></li>
+                <li><a href="ParaCoor.html">Parallel Coordinates</a></li>
+            </ul>
+            <div class="row">
+                <h3 class="pageTitle">Premier League Data</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col s3">
+                    <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-hover="true">Variables</a>
+                    <ul id='dropdown1' class="dropdown-content">
+                        <li><a href="#!" onclick="return selectVar('position', '#387dff');">Position</a></li>
+                        <li><a href="#!" onclick="return selectVar('points', '#2349d1');">Points</a></li>
+                        <li><a href="#!" onclick="return selectVar('gamesPlayed', '#f42929');">Games Played</a></li>
+                        <li><a href="#!" onclick="return selectVar('gamesWon', '#c61f1f');">Games Won</a></li>
+                        <li><a href="#!" onclick="return selectVar('gamesDrawn', '#a01919');">Games Drawn</a></li>
+                        <li><a href="#!" onclick="return selectVar('gamesLost', '#771111');">Games Lost</a></li>
+                        <li><a href="#!" onclick="return selectVar('goalsScored', '#2bd125');">Goals Scored</a></li>
+                        <li><a href="#!" onclick="return selectVar('goalsConceded', '#1fa01b');">Goals Conceded</a></li>
+                        <li><a href="#!" onclick="return selectVar('goalDifference', '#167013');">Goal Difference</a></li>
+                        <li><a href="#!" onclick="return selectVar('cleanSheets', '#d3d3d3');">Clean Sheets</a></li>
+                        <li><a href="#!" onclick="return selectVar('yellowCards', '#ffe735');">Yellow Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col s6">
+                    <p class="range-field">
+                        <a class="waves-effect waves-light btn-small" onclick="decreaseSlider()">-</a>
+                        <input id="seasonSlider" type="range" min="0" max="23" value = "0" onChange="selectSeason(this.value)">
+                        <a class="waves-effect waves-light btn-small" onclick="increaseSlider()">+</a>
+                    </p>
+                </div>
+                <div class="col s3">
+                    <h3 id="selectedVarLabel">Variable: </h3>
+                    <h3 id="selectedSeasonLabel">Season: </h3>
+                </div>
+            </div>
+            <div class="section">
+                <div id="barChart"></div>
+            </div>
+            <script src = "js/BarChart.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+#currentLink {
+    color: #00bfa5;
+}
+.row, .divider, .section {
+    padding-left: 100px;
+}
+
+#slideTitle {
+    font-size: 23;
+    font-weight: normal;
+}
+.side-nav {
+    width: 225px;
+}
+
+#seasonSlider {
+    width: 275;
+}
+
+#selectedVarLabel1, #selectedVarLabel2, #selectedSeasonLabel{
+    font-size: 20px;
+    color: crimson;
+    line-height: 0.1;
+}
+
+.d3-tip {
+    line-height: 2;
+    font-weight: bold;
+    font-size: 20;
+    padding-bottom: 40;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+}

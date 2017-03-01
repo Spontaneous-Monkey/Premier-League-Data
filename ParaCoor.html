@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Parallel Coordinates</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/ParaCoor.css">
+        <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/d3.parcoords.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <ul id="slide-out" class="side-nav fixed">
+                <li><a id="slideTitle" class="header teal accent-4 white-text">Data Views</a></li>
+                <li><a href="BarChart.html">Bar Chart</a></li>
+                <li><a href="BiScatter.html">Bivariate Scatter Plot</a></li>
+                <li><a href="CorrMatrix.html">Correlation Matrix</a></li>
+                <li><a href="#!" id="currentLink">Parallel Coordinates</a></li>
+            </ul>
+            <div class="row">
+                <h3 class="pageTitle">Premier League Data</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="row"></div>
+            <div class="section">
+                <div id="paraCoor" class="parcoords"></div>
+            </div>
+            <script src = "js/ParaCoor.js"></script>
+        </div>
+    </body>
+</html>

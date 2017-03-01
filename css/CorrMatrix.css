@@ -1,0 +1,26 @@
+#currentLink {
+    color: #00bfa5;
+}
+.row, .divider, .section {
+    padding-left: 100px;
+}
+
+#slideTitle {
+    font-size: 23;
+    font-weight: normal;
+}
+.side-nav {
+    width: 225px;
+}
+#corrColor{
+    margin-top: 100;
+}
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20;
+}
+
+.x.axis path, .y.axis path{
+    display: none;
+}
