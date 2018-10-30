@@ -13,14 +13,17 @@
     width: 225px;
 }
 
+.range-field {
+    margin: 0;
+}
 #seasonSlider {
     width: 275;
 }
 
 #selectedVarLabel1, #selectedVarLabel2, #selectedSeasonLabel{
-    font-size: 20px;
-    color: crimson;
-    line-height: 0.1;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .d3-tip {
